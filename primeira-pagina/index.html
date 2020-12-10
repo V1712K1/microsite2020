@@ -11,26 +11,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Landing page with two column layout</title>
-
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-
     body{
       font-family: 'Open Sans', sans-serif;
+      color: hsl(243, 87%, 12%);
     }
-      h2{
+      h2,
+      li{
         font-family: 'Raleway', sans-serif;
-      }
-
-
+      } 
   </style>
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-light attribution" style="padding: 6em 8rem 2rem 8rem;">
+  <nav class="navbar navbar-light attribution" style="padding: 6em 8rem 0 8rem;">
     <a class="logo justify-content-start" href="index.html"><img src="images/logo.svg" alt="Logo"></a>
       <ul class="nav justify-content-right">
         <li class="nav-item">
@@ -46,81 +44,82 @@
   </nav>
 </header>  
 
-<div class="container-fluid" style="padding: 1rem 8rem 5rem ;">
-  <div class="row d-flex" style="margin-bottom: 5rem;">
-    <div class="col justify-content-start" style="align-self: center;">
+<div class="container-fluid " style="padding: 1rem;">
+  <div class="row d-flex" style="margin-bottom: 1rem; align-items: center;">
+    <div class="col justify-content-start" style="align-self: center; margin-top: 0; margin-bottom: 10rem; margin-right: 2rem; margin-left: 7rem;">
       <h2>All your files in one secure location, accessible anywhere.</h2>
 
       <p>Fylo stores your most important files in one secure location. 
          Access them wherever you need, share and collaborate with friends, 
          family, and co-workers.</p>
-
-      <input type="text" placeholder="Enter your email...">  
-      <button type="button" class="btn btn-primary">Get Started</button>
-
+      <input type="text" placeholder="Enter your email..." aria-describedby="inputGroup-sizing-default">  
+      <button type="button" class="btn btn-primary" style="width: 13rem;">Get Started</button>
     </div>
-    <div class="col justify-content-right">  
-      <img src="images/illustration-1.svg" alt="ilust1" height="100%" width="80%">
+
+    <div class="col justify-content-end" style="align-self: center; margin-top: 3rem; margin-bottom: 10rem; margin-right: 7rem; margin-left: 2rem;">  
+      <img src="images/illustration-1.svg" alt="ilust1" height="100%" width="90%">
     </div>
   </div>
+
   <div style="clip-path: ellipse(94% 70% at 56% 71%);">
-  <div class="row d-flex" style="margin-bottom: 3rem; background-color: hsl(240, 75%, 98%);">    
-    <div class="col justify-content-start" style="padding: 8rem;">
-      <h2 style="margin-bottom: 15px;">Stay productive, wherever you are</h2>
-      <p> Never let location be an issue when accessing your files. Fylo has you 
+  <div class="row d-flex" style="background-color: hsl(240, 75%, 98%); height: 60rem; align-items: center;">    
+    <div class="col justify-content-start" style="margin-top: 10rem; margin-bottom: 10rem; margin-right: 0; margin-left: 7rem; align-self: center;">
+      <h2 style="margin-bottom: 15px; ">Stay productive, wherever you are</h2>
+      <p style="width: 37rem;"> Never let location be an issue when accessing your files. Fylo has you 
         covered for all of your file storage needs.
       </p>
-      <p>
+      <p style="width: 37rem;">
         Securely share files and folders with friends, family and colleagues for 
         live collaboration. No email attachments required!
       </p>
-      
-      <a href="#" style="margin-bottom: 15px;"> See how Fylo works</a>
-      
-      <div class="card" style="margin-top: 15px;">
+      <a href="#" style="margin-bottom: 15px;">
+         See how Fylo works <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="6" cy="6" r="6"/><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#3DA08F" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF"/></g></svg>
+      </a>
+      <div class="card" style="margin-top: 3rem; width: 26rem;">
         <div class="card-body" style="width: 18rem; height: 15rem; margin-top: 25px;">
           <p class="card-text" style="width: 150%;">
             Fylo has improved our team productivity by an order of magnitude. Since 
             making the switch our team has become a well-oiled collaboration machine.
-          </p>
-          <p>
-          
-            Kyle Burton
-            Founder & CEO, Huddle</p>
+          </p><hr>
+          <p><img src="images/avatar-testimonial.jpg" alt="mini-dude" style="border-radius: 50%;" height="25%" width="20%" style="padding: 4px;"> <b>Kyle Burton</b><br>Founder & CEO, Huddle</p>
         </div>
       </div>
     </div>
-    <div class="col justify-content-start" style="padding: 7rem 10rem 2rem 10px; align-items: center;">
-      <img src="images/illustration-2.svg" alt="ilust2" height="70%" width="120%">
+    <div class="col justify-content-left" style="align-self: center;">
+      <img src="images/illustration-2.svg" alt="ilust2" height="85%" width="80%">
     </div>
   </div>
   </div>
 
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
+  <div class="row d-flex" style="background-color: hsl(238, 22%, 44%); height: 22 rem; color: white;">
+    <div class="col justify-content-start" style="padding: 5rem; align-self: center;">
+      <h2>Get early access today</h2>
+      <p style="width: 37rem;">It only takes a minute to sign up and our free starter tier is extremely generous.If you have any questions, our support team would be happy to help you.</p>
+    </div>
+    <div class="col justify-content-end" style="padding: 5rem; align-self: center;">
+      <form>
+      <input type="text" placeholder="email@example.com" aria-describedby="inputGroup-sizing-default">  
+      <button type="button" class="btn btn-primary" style="width: 13rem;">Get Started For Free</button>
+    </form>
+    </div>
+  </div>
+<footer class="row d-flex" style="background-color: hsl(243, 87%, 12%); color: white; height: 25rem;">  
   Phone: +1-543-123-4567
   example@fylo.com
-
   About Us
   Jobs
   Press
   Blog
-
   Contact Us
   Terms
   Privacy
-
+</footer>
 </div>  
   <footer>
     <p class="attribution">
       Coded by <a href="#">Vitor Quintal</a>
     </p>
   </footer>
-
+</style> 
 </body>
-</html>
+</html> 
