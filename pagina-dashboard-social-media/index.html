@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
  
   <title>Social Media Dashboard</title>
@@ -14,67 +15,124 @@
 </head>
 
 <body>
-  Social Media Dashboard
-  Total Followers: 23,004
+<div class="container">
+  <div class="up_layer">
+    <div class="headline_up">
+      <div class="top_layer">
+        <img src="images/icon-facebook.svg" alt="">
+        <h1>Social Media Dashboard</h1>
+      </div>
+      <p>Total Followers: 23,004</p>
+    </div>
+    <div class="box1_facebook">
+      @nathanf
+      1987
+      Followers
+      12 Today
+    </div>
+    <div class="box2_">
+      @nathanf
+      1044
+      Followers
+      99 Today
+    </div>
+    <div class="box3">
+      @realnathan              
+      11k
+      Followers
+      1099 Today
+    </div>
+    <div class="box4">
+      Nathan F.
+      8239
+      subscribers
+      144 Today
+    </div>  
+  </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
-  @nathanf
-  1044
-  Followers
-  99 Today
-  @realnathan
-              
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  subscribers
-  144 Today
-            
-  Overview - Today
-
-  Page Views
-  87
-  3%
-    
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-                
-  Total Views
-  1407
-  12%
-
+  <div class="down_layer"> 
+    <div>
+      Overview - Today
+    </div>
+    <div>
+      Page Views
+      87
+      3%
+    </div>
+    <div>
+      Likes
+      52
+      2%
+    </div>
+    <div>
+      Likes
+      5462
+      2257%
+    </div>
+    <div>
+      Profile Views
+      52k
+      1375%
+    </div>
+    <div>
+      Retweets
+      117
+      303%
+    </div>
+    <div>
+      
+      Likes
+      507
+      553%
+    </div>
+    <div>
+      Likes
+      107
+      19%
+    </div>         
+    <div>
+      Total Views
+      1407
+      12%
+    </div>
+  </div>
+</div>  
   <footer>
     <p class="attribution">
       Coded by <a href="#">Nome do Aluno</a>.
     </p>
   </footer>
+  <style>
+    body{
+
+      background-color: hsl(230, 17%, 14%);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .container{
+      margin-right: 0;
+      width: 1440px;
+      justify-content: center;
+      align-items: center;
+
+    }  
+    .up_layer{
+      display: grid;
+      grid-template-rows: repeat(2, 325px);
+      grid-template-columns: repeat(2, 325px);
+
+      grid-row-gap: 30px;
+      grid-column-gap: 30px;
+
+      width: 1440px;
+      height: auto;
+      margin-top: 125px;
+      margin-bottom: 50px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+  </style>
 
 </body>
 
