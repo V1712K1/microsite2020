@@ -86,11 +86,10 @@
       </div>
     </div>  
   </div>
-
+  <div class="headline_up">
+    <h1 style="color: white;">Overview - Today</h1>
+  </div>
   <div class="down_layer"> 
-    <div>
-      Overview - Today
-    </div>
     <div>
       Page Views
       87
@@ -228,6 +227,23 @@
       justify-content: center;
     }
 
+    .down_layer{
+      display: grid;
+      grid-template-rows: repeat(1, 260px);
+      grid-template-columns: repeat(4, 325px);
+
+      grid-row-gap: 30px;
+      grid-column-gap: 30px;
+
+      width: 1440px;
+      height: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      color: hsl(228, 34%, 66%)
+
+    }
   </style>
 
 </body>
